@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@800&display=swap');
+
+.main-container{
+    width:100%;
+    height:100vh;
+    background-color:#557e92;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.form-container{
+    font-family: 'Playpen Sans', cursive;
+    width:25%;
+    background-color:#A0E9FF;
+    padding:20px;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+    border-radius:10px;
+    background-image:url('./bg.jpg');
+    object-fit:cover;
+    /* filter:blur(100%); */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* display:flex;
+    /* flex-direction:row;
+    gap:0px;  */ 
+}
+.form-container label{
+    font-size:20px;
+    padding-bottom:10px;
+    display:inline-block;
+    color:red;
+}
+.form-container input{
+    width:100%;
+    padding:8px;
+    padding-right:30px;
+
+    outline:none;
+    border:0;
+    border:1px groove rgb(255,255,255);
+    /* border-top:1px groove rgb(255,255,255); */
+    /* border:0; */
+    color:rgb(255,255,255);
+    background-color:rgba(165, 212, 253,0.2);
+    
+    border-radius:5px;
+    /* border-bottom:2px solid rgb(128, 128, 128); */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+    /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+}
+.form-container input::placeholder{
+    color:rgb(255,255,255);
+}
+.username,.mail,.password,.mobno{
+     /* background-color:rgb(58, 55, 55);  */
+    padding-bottom:10px;
+    /* margin-bottom:2px; */
+    position:relative;
+    /* padding-right:20px; */
+}
+.fa-user,.fa-envelope,.fa-lock,.fa-phone{
+    position:absolute;
+    top:60%;
+    right:15px;
+    font-size:15px;
+    color:rgb(255,255,255);
+    z-index:1;
+    /* padding-left:5px; */
+}
+/* .fa-envelope{
+    position:absolute;
+    top:60%;
+    right:15px;
+    font-size:15px;
+}
+.fa-lock{
+    position:absolute;
+    top:60%;
+    right:15px;
+    font-size:15px;
+}
+.fa-phone{
+    position:absolute;
+    top:60%;
+    right:15px;
+    font-size:15px;
+} */
+/* responsive-design starts */
+/* mobile */
+@media only screen and (min-width:300px) and (max-width:500px){
+    .form-container{
+        width:100%;
+    }
+    label{
+        font-weight:bold;
+        /* color:crimson; */
+    }
+    .fa-user,.fa-envelope,.fa-lock,.fa-phone{
+        position:absolute;
+        top:55%;
+        right:15px;
+        font-size:15px;
+        /* color:crimson; */
+    }
+}
+/* @media only screen and (max-width:310){
+    .form-container{
+        width:100%;
+        background-color:yellow;
+    }
+    .fa-phone{
+        top:55%;
+        color:red;
+    }
+} */
+/* tablet */
+@media only screen and (min-width:500px) and (max-width:800px){
+    .form-container{
+        width:80%;
+    }
+    label{
+        font-weight:bold;
+        /* color:blue; */
+    }
+    .fa-user,.fa-envelope,.fa-lock,.fa-phone{
+        position:absolute;
+        top:55%;
+        right:15px;
+        font-size:15px;
+        /* color:blue; */
+    }
+}
+/* laptop */
+@media only screen and (min-width:800px) and (max-width:1030px){
+
+    .form-container{
+        width:70%;
+    }
+    label{
+        font-weight:bold;
+        /* color:blue; */
+        font-family: 'Playpen Sans', cursive;
+    }
+    .fa-user,.fa-envelope,.fa-lock,.fa-phone{
+        position:absolute;
+        top:55%;
+        right:15px;
+        font-size:15px;
+        /* color:blue; */
+    }
+   
+}
+/* @media only screen and (min-width:1030px) and (max-width:1440px){
+
+    .form-container{
+        width:70%;
+    }
+    label{
+        font-weight:bold; 
+        color:blue;
+        font-family: 'Playpen Sans', cursive;
+    }
+    .fa-user,.fa-envelope,.fa-lock,.fa-phone{
+        position:absolute;
+        top:55%;
+        right:15px;
+        font-size:15px;
+        color:blue;
+    }
+   
+} */
